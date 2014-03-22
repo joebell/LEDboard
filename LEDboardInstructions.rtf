@@ -1,0 +1,411 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red13\green73\blue189;\red0\green0\blue0;\red255\green255\blue255;
+}
+\margl1440\margr1440\vieww15420\viewh11500\viewkind0
+\deftab720
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\b\fs30 \cf0 Dual Color LED Field Board URL 
+\b0 - http://bit.ly/1bBekll
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 This circuit allows tiling of switchable and diffuse LED light. Each tile has two switchable circuits, (eg. blue and IR). It\'92s built for standard 5 mm through-hole LEDs. Each 3\'94x3\'94 panel has 18 LEDs of each color. It also has room for a 2.1mm power connector, and a standard BNC input. The board edges plug together using .1\'94 header pins that share the power, ground, and switching signals. It also has \uc0\u8539 \'94 diameter mounting holes \'bd\'94 from each corner. \'a0(These work well with 4-40 threaded standoffs.)
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 Each of the 2 channels has 3 series strings of 6 LEDs, with a series resistor to limit current. Both channels are switchable, but only channel A has its switching input brought out to a BNC connector. Most of the time, a wire can be placed across the connection (Jump B) to keep channel B on all the time. If you need to switch both channels, use one of the .1\'94 header pins that can be used to tile the boards to get signals in.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 The blue LEDs want 20 mA at 3.2 V each, the IR LEDs can take up to 100 mA at 1.5 V. Use this info to choose suitable series resistor values for each channel, given the power supply. For example, with a 24 V power supply, we want the blue LEDs to drop 6*3.2V = 18.8 V, so the blue series resistors should drop 24 V - 18.8 V = 4.2 V at 20 mA, so about 200 ohms. 
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 We want the IR leds to drop 9 V, so the resistor would need \'a0to drop 15 V at 100 mA. This would dissipate 1.8 W of power, which is too much for the resistor to handle. (It would also be crazy bright.) Let\'92s allow the resistor to dissipate about 1 W at 330 ohms. 
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 With a 12 V supply the IR LEDs are more comfortable. A 50 ohm resistor allows 60 mA of current with a 3 V drop. A standard \'bc watt resistor will work fine.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 Feel free to use different LED / resistor / supply voltage combinations. The LED lead spacing is for standard 5mm T1\'be package through-hole LEDs.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\b\fs30 \cf0 Building the Boards:
+\f1\b0\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 If you only want 1 or 2, you may be able to get them from the Wilson Lab. Otherwise, you\'92ll need to fabricate your own. 
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 Files are available here: {\field{\*\fldinst{HYPERLINK "https://drive.google.com/file/d/0B7uBwBiCIUHtOEZrYVBxNmMxME0/edit?usp=sharing"}}{\fldrslt \cf2 \ul \ulc2 https://drive.google.com/file/d/0B7uBwBiCIUHtOEZrYVBxNmMxME0/edit?usp=sharing}}
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 The zip file contains the Eagle schematics and board layout, as well as a directory with all of the gerber files necessary for fabrication. Of note are:
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .top
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Top copper traces
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .bot
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Bottom copper traces
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .oln
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Board outline
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .slk
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Top silkscreen
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .smt
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Top soldermask
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .smb
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Bottom soldermask
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .drd
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 NC drill data
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 .bsk
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Bottom silkscreen
+\f1\fs24 \cell \lastrow\row
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 You can upload these to a PCB fab house to have a small number of boards made. I like Sunstone and Silvercircuits. 
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 Because building these requires putting components on both sides of the board, I 
+\b strongly recommend
+\b0  printing both the top and bottom silkscreen. This will cost a bit more, but save you a ton of time and hassle from soldering components onto the wrong places.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 You\'92ll also need to buy parts. They\'92re all available at Digikey. Remember that you\'92ll only need a BNC connector and power supply for one board in each assembly - the others receive signals and power through their edge connectors. 
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\b\fs30 \cf0 Parts: (per each 3\'94x3\'94 panel)
+\f1\b0\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\b\fs30 \cf0 Description:
+\f1\b0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\b\fs30 \cf0 Digikey Part:
+\f1\b0\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\b\fs30 \cf0 Qty:
+\f1\b0\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Female header connector
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 S5477-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 4
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Male header connector
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 3M9467-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 4
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 BNC connector (optional)
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 A32261-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 1
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Power connector (2.1mm, optional)
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 PJ-102A
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 1
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 IR LED (860 nm)
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 475-3003-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 18
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Blue LED (470 nm)
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 \cb4 C503B-BCN-CV0Z0461-ND
+\f1\fs24 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 18
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 IR channel series resistors, 330 ohm
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 \cb4 PPC330W-1CT-ND
+\f1\fs24 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 6
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 Blue channel series resistors, 200 ohm
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 \cb4 CF14JT200RCT-ND
+\f1\fs24 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 6
+\f1\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth4460\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 FET Switch
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 \cb4 IRF530
+\f1\fs24 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+
+\f0\fs30 \cf0 2
+\f1\fs24 \cell \lastrow\row
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\b\fs30 \cf0 Building the boards:
+\f1\b0\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 Pay special attention to the order of operations here. Some parts occlude the spots where others need to be soldered.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 (1) Place transistors first, paying attention to the polarity. (If you won\'92t use the switching feature, you don\'92t need them.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 (2) Add the 3 resistors for each channel.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 (3) If you won\'92t be switching a channel and want it to be on all the time, connect a wire across the JUMP location.
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 (4) Now solder in the LEDs. \'a0Pay attention to polarity here too! (Note the shape of the silkscreen - the flatted part of the LED points right.) Also make sure you get the right color LED in the right channel. The colors are arranged in an intercolated diamond pattern, with Channel A having thick silkscreen, and Channel B having thin silkscreen. \'a0
+\f1\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sl340\ql\qnatural
+
+\f0\fs30 \cf0 (5) Add the connectors last. You won\'92t be able to use both a BNC channel A switching input and the edge connector on that side. Facing the LED side, the male edge connectors go on the top and right edges of the board, the female connectors go on the bottom and left edges.
+\f1\fs24 \
+}
